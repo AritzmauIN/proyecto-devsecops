@@ -1,4 +1,5 @@
-FROM alpine
-
-CMD ["echo", "Pipeline CI funcionando correctamente"] 
+FROM python:3.4-alpine
+WORKDIR /app
+COPY app.py .
+CMD ["python", "app.py"]
 
